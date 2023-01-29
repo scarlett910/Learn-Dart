@@ -1,28 +1,13 @@
 import 'dart:io';
 import 'dart:math';
 
-class Bai144 {
-  bool checkPrime(int n) {
-    int count = 0;
-    if (n < 2) {
-      return false;
-    } else {
-      for (int i = 1; i <= n; i++) {
-        if (n % i == 0) {
-          count++;
-        }
-      }
-      if (count == 2) {
-        return true;
-      } else {
-        return false;
-      }
-    }
-  }
+import 'so_nguyen_to.dart';
+import 'user_input.dart';
 
+class Bai144 {
   int findFirstPrime(List index, int n) {
     for (int i = 0; i < n; i++) {
-      if (checkPrime(index[i]) == true) {
+      if (SoNguyenTo.isSoNguyenToV2(index[i]) == true) {
         return index[i];
       }
     }
@@ -31,17 +16,11 @@ class Bai144 {
 
   void resolve() {
     // Bài 144: Tìm số nguyên tố đầu tiên trong mảng 1 chiều các số nguyên. Nếu mảng không có số nguyên tố thì trả về -1
-    print('Nhap n:');
-    int? n = int.parse(stdin.readLineSync()!);
-    List<int> index = [];
-    var randomNumber = Random();
+    int n = UserInput.nhapSoV2('Mời bạn nhập 1 số bạn thích');
+    List<int> listInt = UserInput.taoMangSoNguyen(n);
 
-    while (index.length < n) {
-      int i = randomNumber.nextInt(100);
-      index.add(i);
-    }
-    print(index);
+    print(listInt);
 
-    print(findFirstPrime(index, n));
+    print(findFirstPrime(listInt, n));
   }
 }
