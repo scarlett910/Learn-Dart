@@ -17,13 +17,13 @@ class SoNguyenTo {
     }
   }
 
-  static bool isSoNguyenToV2(int n) {
+  static bool isSoNguyenToV2({required int number}) {
     int count = 0;
-    if (n < 2) {
+    if (number < 2) {
       return false;
     } else {
-      for (int i = 1; i <= n; i++) {
-        if (n % i == 0) {
+      for (int i = 1; i <= number; i++) {
+        if (number % i == 0) {
           count++;
         }
       }

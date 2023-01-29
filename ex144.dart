@@ -7,7 +7,7 @@ import 'user_input.dart';
 class Bai144 {
   int findFirstPrime(List index, int n) {
     for (int i = 0; i < n; i++) {
-      if (SoNguyenTo.isSoNguyenToV2(index[i]) == true) {
+      if (SoNguyenTo.isSoNguyenToV2(number: index[i]) == true) {
         return index[i];
       }
     }
