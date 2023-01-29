@@ -1,6 +1,8 @@
 import 'dart:io';
+import 'constants.dart';
 import 'bai_tap.dart';
 
+// 93, 144, 148, 151
 class GiaiBaiTap {
   void giaiBai1() {
     Bai77().resolve();
@@ -479,6 +481,9 @@ class GiaiBaiTap {
         break;
       case 68:
         giaiBai68();
+        break;
+      case 69:
+        print('PI: ${Constants.Pi}, ${Constants.secondsPerHours}');
         break;
     }
   }
