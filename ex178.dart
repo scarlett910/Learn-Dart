@@ -1,29 +1,19 @@
-import 'dart:io';
-import 'dart:math';
+import 'user_input.dart';
 
 class Bai178 {
   void resolve() {
     // Bài 178: Hãy liệt kê các số chẵn trong mảng 1 chiều các số nguyên thuộc đoạn [x, y] cho trước (x, y là các số nguyên)
-    List<int> index = [];
-    print('Nhập số phần tử:');
-    int? n = int.parse(stdin.readLineSync()!);
-    var randomNumber = Random();
+    UserInput inputOpt = UserInput();
+    int n = inputOpt.enterInput('Nhap so phan tu:');
+    List<int> list = inputOpt.createIntList(soPhanTu: n);
+    print(list);
 
-    while (index.length < n) {
-      int i = randomNumber.nextInt(100);
-      index.add(i);
-    }
-    print(index);
-
-    print('Nhap x: ');
-    int? x = int.parse(stdin.readLineSync()!);
-
-    print('Nhap y: ');
-    int? y = int.parse(stdin.readLineSync()!);
+    int x = inputOpt.enterInput('Nhap x:');
+    int y = inputOpt.enterInput('Nhap y:');
 
     for (int j = 0; j < n; j++) {
-      if (index[j] >= x && index[j] <= y && index[j] % 2 == 0) {
-        print(index[j]);
+      if (list[j] >= x && list[j] <= y && list[j] % 2 == 0) {
+        print(list[j]);
       }
     }
   }

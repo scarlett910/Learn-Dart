@@ -1,5 +1,4 @@
-import 'dart:io';
-import 'dart:math';
+import 'user_input.dart';
 
 class Bai132 {
   void listEvenNumber(List index, int n) {
@@ -12,17 +11,11 @@ class Bai132 {
 
   void resolve() {
     // Bài 132: Viết hàm liệt kê các giá trị chẵn trong mảng 1 chiều các số nguyên
-    print('Nhap n:');
-    int? n = int.parse(stdin.readLineSync()!);
-    List<int> index = [];
-    var randomNumber = Random();
+    UserInput inputOpt = UserInput();
+    int n = inputOpt.enterInput('Nhap so phan tu:');
+    List<int> list = inputOpt.createIntList(soPhanTu: n);
+    print(list);
 
-    while (index.length < n) {
-      int i = randomNumber.nextInt(200) - 100;
-      index.add(i);
-    }
-    print(index);
-
-    listEvenNumber(index, n);
+    listEvenNumber(list, n);
   }
 }

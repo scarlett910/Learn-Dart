@@ -1,30 +1,23 @@
-import 'dart:io';
-import 'dart:math';
+import 'user_input.dart';
 
 class Bai282 {
   void resolve() {
     //Bài 282: Đưa các số chia hết cho 3 về đầu mảng
-    List<int> index = [];
-    print('Nhập số phần tử:');
-    int? n = int.parse(stdin.readLineSync()!);
-    var randomNumber = Random();
+    UserInput inputOpt = UserInput();
+    int n = inputOpt.enterInput('Nhap so phan tu:');
+    List<int> list = inputOpt.createIntList(soPhanTu: n);
+    print(list);
 
-    while (index.length < n) {
-      int i = randomNumber.nextInt(100);
-      index.add(i);
-    }
-    print(index);
-
-    final List<int> index2 = [];
-    final List<int> index3 = [];
-    for (int i = 0; i < index.length; i++) {
-      if (index[i] % 3 == 0) {
-        index2.add(index[i]);
+    final List<int> list2 = [];
+    final List<int> list3 = [];
+    for (int i = 0; i < list.length; i++) {
+      if (list[i] % 3 == 0) {
+        list2.add(list[i]);
       } else {
-        index3.add(index[i]);
+        list3.add(list[i]);
       }
     }
-    index2.addAll(index3);
-    print(index2);
+    list2.addAll(list3);
+    print(list2);
   }
 }

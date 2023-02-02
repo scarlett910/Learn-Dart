@@ -1,10 +1,10 @@
-import 'dart:io';
+import 'user_input.dart';
 
 class Bai106 {
   void resolve() {
     // Bài 106 Viết chương trình nhập 1 số nguyên có 3 chữ số.  Hãy in ra cách đọc của số nguyên này
-    print('Nhap n:');
-    int? n = int.parse(stdin.readLineSync()!);
+    UserInput inputOpt = UserInput();
+    int n = inputOpt.enterInput('Nhap n:');
     int hangtram = n ~/ 100;
     int hangchuc = (n - hangtram * 100) ~/ 10;
     int donvi = n % 10;

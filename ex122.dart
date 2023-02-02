@@ -1,5 +1,4 @@
-import 'dart:io';
-import 'dart:math';
+import 'user_input.dart';
 
 class Bai122 {
   int largestIndex(List index, int n) {
@@ -14,16 +13,11 @@ class Bai122 {
 
   void resolve() {
     // Bài 122: Viết hàm tìm giá trị lớn nhất trong mảng 1 chiều các số thực
-    print('Nhap so phan tu:');
-    int? n = int.parse(stdin.readLineSync()!);
-    List<int> index = [];
-    var randomNumber = Random();
-    while (index.length < n) {
-      int i = randomNumber.nextInt(100);
-      index.add(i);
-    }
-    print(index);
+    UserInput inputOpt = UserInput();
+    int n = inputOpt.enterInput('Nhap so phan tu:');
+    List<int> list = inputOpt.createIntList(soPhanTu: n);
+    print(list);
 
-    print(largestIndex(index, n));
+    print(largestIndex(list, n));
   }
 }

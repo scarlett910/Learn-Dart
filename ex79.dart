@@ -1,18 +1,17 @@
-import 'dart:io';
+import 'user_input.dart';
 
 class Bai79 {
   void resolve() {
     //Bài 79: Hãy đếm số lượng chữ số của số nguyên dương n
 
-    print('Nhap n:');
-    int? n = int.parse(stdin.readLineSync()!);
+    UserInput inputOpt = UserInput();
+    int n = inputOpt.enterInput('Nhap n:');
 
     int dem = 0;
-    int t = n;
 
-    while (t != 0) {
+    while (n != 0) {
       dem++;
-      t = t ~/ 10;
+      n = n ~/ 10;
     }
     print(dem);
   }

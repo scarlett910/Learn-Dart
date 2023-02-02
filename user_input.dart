@@ -2,24 +2,19 @@ import 'dart:io';
 import 'dart:math';
 
 class UserInput {
-  static int nhapSoV2([String label = 'Nhập 1 số:']) {
+  int enterInput(String label) {
     print(label);
     return int.parse(stdin.readLineSync()!);
   }
 
-  static List<int> taoMangSoNguyen(int soLuong) {
+  List<int> createIntList({required int soPhanTu}) {
     List<int> list = [];
     var randomNumber = Random();
 
-    while (list.length < soLuong) {
-      int i = randomNumber.nextInt(100);
+    while (list.length < soPhanTu) {
+      int i = randomNumber.nextInt(200) - 100;
       list.add(i);
     }
     return list;
-  }
-
-  int nhapSo([String label = 'Nhập 1 số:']) {
-    print(label);
-    return int.parse(stdin.readLineSync()!);
   }
 }

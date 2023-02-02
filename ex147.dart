@@ -1,5 +1,4 @@
-import 'dart:io';
-import 'dart:math';
+import 'user_input.dart';
 
 class Bai147 {
   int findLastPos(List index, int n) {
@@ -13,17 +12,11 @@ class Bai147 {
 
   void resolve() {
     //Bài 147: Tìm số dương cuối cùng trong mảng số thực. Nếu mảng không có giá trị dương thì trả về -1
-    print('Nhap n:');
-    int? n = int.parse(stdin.readLineSync()!);
-    List<int> index = [];
-    var randomNumber = Random();
+    UserInput inputOpt = UserInput();
+    int n = inputOpt.enterInput('Nhap so phan tu:');
+    List<int> list = inputOpt.createIntList(soPhanTu: n);
+    print(list);
 
-    while (index.length < n) {
-      int i = randomNumber.nextInt(200) - 100;
-      index.add(i);
-    }
-    print(index);
-
-    print(findLastPos(index, n));
+    print(findLastPos(list, n));
   }
 }

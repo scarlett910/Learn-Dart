@@ -1,10 +1,10 @@
-import 'dart:io';
+import 'user_input.dart';
 
 class Bai105 {
   void resolve() {
     // Bài 105: Viết chương trình nhập 1 số nguyên có 2 chữ số.  Hãy in ra cách đọc của số nguyên này
-    print('Nhap n:');
-    int? n = int.parse(stdin.readLineSync()!);
+    UserInput inputOpt = UserInput();
+    int n = inputOpt.enterInput('Nhap n:');
 
     int hangchuc = n ~/ 10;
     int donvi = n % 10;

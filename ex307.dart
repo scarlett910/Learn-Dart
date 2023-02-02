@@ -1,7 +1,12 @@
+import 'user_input.dart';
+
 class Bai307 {
   void resolve() {
     //Bài 307: Tạo mảng b chỉ chứa giá trị lẻ từ mảng a
-    List<int> a = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    UserInput inputOpt = UserInput();
+    int n = inputOpt.enterInput('Nhap so phan tu:');
+    List<int> a = inputOpt.createIntList(soPhanTu: n);
+    print(a);
     List<int> b = [];
 
     for (int i = 0; i < a.length; i++) {

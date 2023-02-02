@@ -1,16 +1,12 @@
-import 'dart:io';
+import 'user_input.dart';
 
 class Bai97 {
   void resolve() {
     // Bài 97: Viết chương trình nhập 3 cạnh của 1 tam giác, cho biết đó là tam giác gì
-    print('Nhap a:');
-    int? a = int.parse(stdin.readLineSync()!);
-
-    print('Nhap b:');
-    int? b = int.parse(stdin.readLineSync()!);
-
-    print('Nhap c:');
-    int? c = int.parse(stdin.readLineSync()!);
+    UserInput inputOpt = UserInput();
+    int a = inputOpt.enterInput('Nhap do dai canh 1:');
+    int b = inputOpt.enterInput('Nhap do dai canh 2:');
+    int c = inputOpt.enterInput('Nhap do dai canh 3:');
     if (a + b <= c || a + c <= b || b + c <= a) {
       print('Tam giac ko ton tai');
     } else {

@@ -1,28 +1,19 @@
-import 'dart:io';
-import 'dart:math';
+import 'user_input.dart';
 
 class Bai177 {
   void resolve() {
     // Bài 177: Hãy liệt kê các số trong mảng 1 chiều các số thực thuộc đoạn [x, y] cho trước
-    List<int> index = [];
-    print('Nhập số phần tử:');
-    int? n = int.parse(stdin.readLineSync()!);
-    var randomNumber = Random();
+    UserInput inputOpt = UserInput();
+    int n = inputOpt.enterInput('Nhap so phan tu:');
+    List<int> list = inputOpt.createIntList(soPhanTu: n);
+    print(list);
 
-    while (index.length < n) {
-      int i = randomNumber.nextInt(100);
-      index.add(i);
-    }
-    print(index);
-    print('Nhap x: ');
-    int? x = int.parse(stdin.readLineSync()!);
-
-    print('Nhap y: ');
-    int? y = int.parse(stdin.readLineSync()!);
+    int x = inputOpt.enterInput('Nhap x:');
+    int y = inputOpt.enterInput('Nhap y:');
 
     for (int j = 0; j < n; j++) {
-      if (index[j] >= x && index[j] <= y) {
-        print(index[j]);
+      if (list[j] >= x && list[j] <= y) {
+        print(list[j]);
       }
     }
   }

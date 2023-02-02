@@ -1,18 +1,24 @@
+import 'user_input.dart';
+
 class Bai280 {
   void resolve() {
     //Bài 280: Hãy đưa số 1 về đầu mảng
-    List<int> index = [2, 1, 3, 4, 5, 6, 1, 7, 8, 1];
+    UserInput inputOpt = UserInput();
+    int n = inputOpt.enterInput('Nhap so phan tu:');
+    List<int> list = inputOpt.createIntList(soPhanTu: n);
+    list.add(1);
+    print(list);
 
-    final List<int> index2 = [];
-    final List<int> index3 = [];
-    for (int i = 0; i < index.length; i++) {
-      if (index[i] == 1) {
-        index2.add(index[i]);
+    final List<int> list2 = [];
+    final List<int> list3 = [];
+    for (int i = 0; i < list.length; i++) {
+      if (list[i] == 1) {
+        list2.add(list[i]);
       } else {
-        index3.add(index[i]);
+        list3.add(list[i]);
       }
     }
-    index2.addAll(index3);
-    print(index2);
+    list2.addAll(list3);
+    print(list2);
   }
 }

@@ -1,11 +1,11 @@
-import 'dart:io';
+import 'user_input.dart';
 
 class Bai85 {
   void resolve() {
     // Bài 85: Nhập vào tháng của 1 năm. Cho biết tháng thuộc quý mấy trong năm
 
-    print('Nhập tháng:');
-    int? month = int.parse(stdin.readLineSync()!);
+    UserInput inputOpt = UserInput();
+    int month = inputOpt.enterInput('Nhap thang:');
 
     // method 1
     if ((month == 1) || (month == 2) || (month == 3)) {

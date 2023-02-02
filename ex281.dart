@@ -1,35 +1,29 @@
-import 'dart:io';
-import 'dart:math';
+import 'user_input.dart';
 
 class Bai281 {
   void resolve() {
     //Bài 281: Hãy đưa chẵn về đầu, lẻ về cuối, phần tử 0 nằm giữa mảng
-    List<int> index = [];
-    print('Nhập số phần tử:');
-    int? n = int.parse(stdin.readLineSync()!);
-    var randomNumber = Random();
+    UserInput inputOpt = UserInput();
+    int n = inputOpt.enterInput('Nhap so phan tu:');
+    List<int> list = inputOpt.createIntList(soPhanTu: n);
+    list.add(0);
+    print(list);
 
-    while (index.length < n) {
-      int i = randomNumber.nextInt(100);
-      index.add(i);
-    }
-    print(index);
-
-    final List<int> index2 = [];
-    final List<int> index3 = [];
-    final List<int> index4 = [];
-    for (int i = 0; i < index.length; i++) {
-      if (index[i] % 2 == 0 && index[i] != 0) {
-        index2.add(index[i]);
-      } else if (index[i] == 0) {
-        index3.add(index[i]);
+    final List<int> list2 = [];
+    final List<int> list3 = [];
+    final List<int> list4 = [];
+    for (int i = 0; i < list.length; i++) {
+      if (list[i] % 2 == 0 && list[i] != 0) {
+        list2.add(list[i]);
+      } else if (list[i] == 0) {
+        list3.add(list[i]);
       } else {
-        index4.add(index[i]);
+        list4.add(list[i]);
       }
     }
 
-    index2.addAll(index3);
-    index2.addAll(index4);
-    print(index2);
+    list2.addAll(list3);
+    list2.addAll(list4);
+    print(list2);
   }
 }

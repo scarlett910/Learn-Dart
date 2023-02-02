@@ -1,12 +1,11 @@
-import 'dart:io';
-import 'dart:math';
+import 'user_input.dart';
 
 class Bai126 {
-  int totalNegativeNum(List index, int n) {
+  int totalNegativeNum(List list, int n) {
     int sum = 0;
     for (int i = 0; i < n; i++) {
-      int num = index[i];
-      if (index[i] < 0) {
+      int num = list[i];
+      if (list[i] < 0) {
         sum += num;
       }
     }
@@ -15,17 +14,11 @@ class Bai126 {
 
   void resolve() {
     // Bài 126: Viết hàm tính tổng các giá trị âm trong mảng 1 chiều các số thực
-    print('Nhap n:');
-    int? n = int.parse(stdin.readLineSync()!);
-    List<int> index = [];
-    var randomNumber = Random();
+    UserInput inputOpt = UserInput();
+    int n = inputOpt.enterInput('Nhap so phan tu:');
+    List<int> list = inputOpt.createIntList(soPhanTu: n);
+    print(list);
 
-    while (index.length < n) {
-      int i = randomNumber.nextInt(200) - 100;
-      index.add(i);
-    }
-    print(index);
-
-    print(totalNegativeNum(index, n));
+    print(totalNegativeNum(list, n));
   }
 }

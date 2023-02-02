@@ -1,13 +1,11 @@
-import 'dart:io';
-import 'dart:math';
-
-import 'so_nguyen_to.dart';
 import 'user_input.dart';
+import 'prime_number.dart';
 
+// Bài 144: Tìm số nguyên tố đầu tiên trong mảng 1 chiều các số nguyên. Nếu mảng không có số nguyên tố thì trả về -1
 class Bai144 {
   int findFirstPrime(List index, int n) {
     for (int i = 0; i < n; i++) {
-      if (SoNguyenTo.isSoNguyenToV2(number: index[i]) == true) {
+      if (PrimeNumber.checkPrime(number: n) == true) {
         return index[i];
       }
     }
@@ -15,12 +13,11 @@ class Bai144 {
   }
 
   void resolve() {
-    // Bài 144: Tìm số nguyên tố đầu tiên trong mảng 1 chiều các số nguyên. Nếu mảng không có số nguyên tố thì trả về -1
-    int n = UserInput.nhapSoV2('Mời bạn nhập 1 số bạn thích');
-    List<int> listInt = UserInput.taoMangSoNguyen(n);
+    UserInput inputOpt = UserInput();
+    int n = inputOpt.enterInput('Nhap so phan tu:');
+    List<int> list = inputOpt.createIntList(soPhanTu: n);
+    print(list);
 
-    print(listInt);
-
-    print(findFirstPrime(listInt, n));
+    print(findFirstPrime(list, n));
   }
 }

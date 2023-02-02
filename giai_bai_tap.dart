@@ -1,497 +1,501 @@
-import 'dart:io';
-import 'constants.dart';
 import 'bai_tap.dart';
+import 'user_input.dart';
 
-// 93, 144, 148, 151
 class GiaiBaiTap {
-  void giaiBai1() {
+  void giaiBai77() {
     Bai77().resolve();
   }
 
-  void giaiBai2() {
+  void giaiBai78() {
     Bai78().resolve();
   }
 
-  void giaiBai3() {
+  void giaiBai79() {
     Bai79().resolve();
   }
 
-  void giaiBai4() {
+  void giaiBai82() {
     Bai82().resolve();
   }
 
-  void giaiBai5() {
+  void giaiBai83() {
     Bai83().resolve();
   }
 
-  void giaiBai6() {
+  void giaiBai85() {
     Bai85().resolve();
   }
 
-  void giaiBai7() {
+  void giaiBai86() {
     Bai86().resolve();
   }
 
-  void giaiBai8() {
+  void giaiBai87() {
     Bai87().resolve();
   }
 
-  void giaiBai9() {
+  void giaiBai89() {
     Bai89().resolve();
   }
 
-  void giaiBai10() {
+  void giaiBai90() {
     Bai90().resolve();
   }
 
-  void giaiBai11() {
+  void giaiBai91() {
     Bai91().resolve();
   }
 
-  void giaiBai12() {
+  void giaiBai92() {
     Bai92().resolve();
   }
 
-  void giaiBai13() {
+  void giaiBai93() {
     Bai93().resolve();
   }
 
-  void giaiBai14() {
+  void giaiBai94() {
     Bai94().resolve();
   }
 
-  void giaiBai15() {
+  void giaiBai95() {
     Bai95().resolve();
   }
 
-  void giaiBai16() {
+  void giaiBai96() {
     Bai96().resolve();
   }
 
-  void giaiBai17() {
+  void giaiBai97() {
     Bai97().resolve();
   }
 
-  void giaiBai18() {
+  void giaiBai101() {
     Bai101().resolve();
   }
 
-  void giaiBai19() {
+  void giaiBai102() {
     Bai102().resolve();
   }
 
-  void giaiBai20() {
+  void giaiBai103() {
     Bai103().resolve();
   }
 
-  void giaiBai21() {
+  void giaiBai104() {
     Bai104().resolve();
   }
 
-  void giaiBai22() {
+  void giaiBai105() {
     Bai105().resolve();
   }
 
-  void giaiBai23() {
+  void giaiBai106() {
     Bai106().resolve();
   }
 
-  void giaiBai24() {
+  void giaiBai108() {
     Bai108().resolve();
   }
 
-  void giaiBai25() {
+  void giaiBai115() {
     Bai115().resolve();
   }
 
-  void giaiBai26() {
+  void giaiBai116() {
     Bai116().resolve();
   }
 
-  void giaiBai27() {
+  void giaiBai120() {
     Bai120().resolve();
   }
 
-  void giaiBai28() {
+  void giaiBai176() {
     Bai176().resolve();
   }
 
-  void giaiBai29() {
+  void giaiBai177() {
     Bai177().resolve();
   }
 
-  void giaiBai30() {
+  void giaiBai178() {
     Bai178().resolve();
   }
 
-  void giaiBai31() {
+  void giaiBai200() {
     Bai200().resolve();
   }
 
-  void giaiBai32() {
+  void giaiBai201() {
     Bai201().resolve();
   }
 
-  void giaiBai33() {
+  void giaiBai202() {
     Bai202().resolve();
   }
 
-  void giaiBai34() {
+  void giaiBai203() {
     Bai203().resolve();
   }
 
-  void giaiBai35() {
+  void giaiBai216() {
     Bai216().resolve();
   }
 
-  void giaiBai36() {
+  void giaiBai217() {
     Bai217().resolve();
   }
 
-  void giaiBai37() {
+  void giaiBai266() {
     Bai266().resolve();
   }
 
-  void giaiBai38() {
+  void giaiBai271() {
     Bai271().resolve();
   }
 
-  void giaiBai39() {
+  void giaiBai273() {
     Bai273().resolve();
   }
 
-  void giaiBai40() {
+  void giaiBai274() {
     Bai274().resolve();
   }
 
-  void giaiBai41() {
+  void giaiBai280() {
     Bai280().resolve();
   }
 
-  void giaiBai42() {
+  void giaiBai282() {
     Bai282().resolve();
   }
 
-  void giaiBai43() {
+  void giaiBai281() {
+    Bai281().resolve();
+  }
+
+  void giaiBai307() {
     Bai307().resolve();
   }
 
-  void giaiBai44() {
+  void giaiBai117() {
     Bai117().resolve();
   }
 
-  void giaiBai45() {
+  void giaiBai110() {
     Bai110().resolve();
   }
 
-  void giaiBai46() {
+  void giaiBai122() {
     Bai122().resolve();
   }
 
-  void giaiBai47() {
+  void giaiBai123() {
     Bai123().resolve();
   }
 
-  void giaiBai48() {
+  void giaiBai124() {
     Bai124().resolve();
   }
 
-  void giaiBai49() {
+  void giaiBai126() {
     Bai126().resolve();
   }
 
-  void giaiBai50() {
+  void giaiBai132() {
     Bai132().resolve();
   }
 
-  void giaiBai51() {
+  void giaiBai308() {
     Bai308().resolve();
   }
 
-  void giaiBai52() {
+  void giaiBai133() {
     Bai133().resolve();
   }
 
-  void giaiBai53() {
+  void giaiBai134() {
     Bai134().resolve();
   }
 
-  void giaiBai54() {
+  void giaiBai135() {
     Bai135().resolve();
   }
 
-  void giaiBai55() {
+  void giaiBai136() {
     Bai136().resolve();
   }
 
-  void giaiBai56() {
+  void giaiBai137() {
     Bai137().resolve();
   }
 
-  void giaiBai57() {
+  void giaiBai138() {
     Bai138().resolve();
   }
 
-  void giaiBai58() {
+  void giaiBai140() {
     Bai140().resolve();
   }
 
-  void giaiBai59() {
+  void giaiBai141() {
     Bai141().resolve();
   }
 
-  void giaiBai60() {
+  void giaiBai142() {
     Bai142().resolve();
   }
 
-  void giaiBai61() {
+  void giaiBai143() {
     Bai143().resolve();
   }
 
-  void giaiBai62() {
+  void giaiBai144() {
     Bai144().resolve();
   }
 
-  void giaiBai63() {
+  void giaiBai146() {
     Bai146().resolve();
   }
 
-  void giaiBai64() {
+  void giaiBai147() {
     Bai147().resolve();
   }
 
-  void giaiBai65() {
+  void giaiBai148() {
     Bai148().resolve();
   }
 
-  void giaiBai66() {
+  void giaiBai150() {
     Bai150().resolve();
   }
 
-  void giaiBai67() {
+  void giaiBai151() {
     Bai151().resolve();
   }
 
-  void giaiBai68() {
+  void giaiBai153() {
     Bai153().resolve();
   }
 
   void giaiBaiX(int soBai) {
     switch (soBai) {
-      case 1:
-        giaiBai1();
+      case 77:
+        giaiBai77();
         break;
-      case 2:
-        giaiBai2();
+      case 78:
+        giaiBai78();
         break;
-      case 3:
-        giaiBai3();
+      case 79:
+        giaiBai79();
         break;
-      case 4:
-        giaiBai4();
+      case 82:
+        giaiBai82();
         break;
-      case 5:
-        giaiBai5();
+      case 83:
+        giaiBai83();
         break;
-      case 6:
-        giaiBai6();
+      case 85:
+        giaiBai85();
         break;
-      case 7:
-        giaiBai7();
+      case 86:
+        giaiBai86();
         break;
-      case 8:
-        giaiBai8();
+      case 87:
+        giaiBai87();
         break;
-      case 9:
-        giaiBai9();
+      case 89:
+        giaiBai89();
         break;
-      case 10:
-        giaiBai10();
+      case 90:
+        giaiBai90();
         break;
-      case 11:
-        giaiBai11();
+      case 91:
+        giaiBai91();
         break;
-      case 12:
-        giaiBai12();
+      case 92:
+        giaiBai92();
         break;
-      case 13:
-        giaiBai13();
+      case 93:
+        giaiBai93();
         break;
-      case 14:
-        giaiBai14();
+      case 94:
+        giaiBai94();
         break;
-      case 15:
-        giaiBai15();
+      case 95:
+        giaiBai95();
         break;
-      case 16:
-        giaiBai16();
+      case 96:
+        giaiBai96();
         break;
-      case 17:
-        giaiBai17();
+      case 97:
+        giaiBai97();
         break;
-      case 18:
-        giaiBai18();
+      case 101:
+        giaiBai101();
         break;
-      case 19:
-        giaiBai19();
+      case 102:
+        giaiBai102();
         break;
-      case 20:
-        giaiBai20();
+      case 103:
+        giaiBai103();
         break;
-      case 21:
-        giaiBai21();
+      case 104:
+        giaiBai104();
         break;
-      case 22:
-        giaiBai22();
+      case 105:
+        giaiBai105();
         break;
-      case 23:
-        giaiBai23();
+      case 106:
+        giaiBai106();
         break;
-      case 24:
-        giaiBai24();
+      case 108:
+        giaiBai108();
         break;
-      case 25:
-        giaiBai25();
+      case 115:
+        giaiBai115();
         break;
-      case 26:
-        giaiBai26();
+      case 116:
+        giaiBai116();
         break;
-      case 27:
-        giaiBai27();
+      case 120:
+        giaiBai120();
         break;
-      case 28:
-        giaiBai28();
+      case 176:
+        giaiBai176();
         break;
-      case 29:
-        giaiBai29();
+      case 177:
+        giaiBai177();
         break;
-      case 30:
-        giaiBai30();
+      case 178:
+        giaiBai178();
         break;
-      case 31:
-        giaiBai31();
+      case 200:
+        giaiBai200();
         break;
-      case 32:
-        giaiBai32();
+      case 201:
+        giaiBai201();
         break;
-      case 33:
-        giaiBai33();
+      case 202:
+        giaiBai202();
         break;
-      case 34:
-        giaiBai34();
+      case 203:
+        giaiBai203();
         break;
-      case 35:
-        giaiBai35();
+      case 216:
+        giaiBai216();
         break;
-      case 36:
-        giaiBai36();
+      case 217:
+        giaiBai217();
         break;
-      case 37:
-        giaiBai37();
+      case 266:
+        giaiBai266();
         break;
-      case 38:
-        giaiBai38();
+      case 271:
+        giaiBai271();
         break;
-      case 39:
-        giaiBai39();
+      case 273:
+        giaiBai273();
         break;
-      case 40:
-        giaiBai40();
+      case 274:
+        giaiBai274();
         break;
-      case 41:
-        giaiBai41();
+      case 280:
+        giaiBai280();
         break;
-      case 42:
-        giaiBai42();
+      case 282:
+        giaiBai282();
         break;
-      case 43:
-        giaiBai43();
+      case 307:
+        giaiBai307();
         break;
-      case 44:
-        giaiBai44();
+      case 117:
+        giaiBai117();
         break;
-      case 45:
-        giaiBai45();
+      case 110:
+        giaiBai110();
         break;
-      case 46:
-        giaiBai46();
+      case 122:
+        giaiBai122();
         break;
-      case 47:
-        giaiBai47();
+      case 123:
+        giaiBai123();
         break;
-      case 48:
-        giaiBai48();
+      case 124:
+        giaiBai124();
         break;
-      case 49:
-        giaiBai49();
+      case 126:
+        giaiBai126();
         break;
-      case 50:
-        giaiBai50();
+      case 132:
+        giaiBai132();
         break;
-      case 51:
-        giaiBai51();
+      case 308:
+        giaiBai308();
         break;
-      case 52:
-        giaiBai52();
+      case 133:
+        giaiBai133();
         break;
-      case 53:
-        giaiBai53();
+      case 134:
+        giaiBai134();
         break;
-      case 54:
-        giaiBai54();
+      case 135:
+        giaiBai135();
         break;
-      case 55:
-        giaiBai55();
+      case 136:
+        giaiBai136();
         break;
-      case 56:
-        giaiBai56();
+      case 137:
+        giaiBai137();
         break;
-      case 57:
-        giaiBai57();
+      case 138:
+        giaiBai138();
         break;
-      case 58:
-        giaiBai58();
+      case 140:
+        giaiBai140();
         break;
-      case 59:
-        giaiBai59();
+      case 141:
+        giaiBai141();
         break;
-      case 60:
-        giaiBai60();
+      case 142:
+        giaiBai142();
         break;
-      case 61:
-        giaiBai61();
+      case 143:
+        giaiBai143();
         break;
-      case 62:
-        giaiBai62();
+      case 144:
+        giaiBai144();
         break;
-      case 63:
-        giaiBai63();
+      case 146:
+        giaiBai146();
         break;
-      case 64:
-        giaiBai64();
+      case 147:
+        giaiBai147();
         break;
-      case 65:
-        giaiBai65();
+      case 148:
+        giaiBai148();
         break;
-      case 66:
-        giaiBai66();
+      case 150:
+        giaiBai150();
         break;
-      case 67:
-        giaiBai67();
+      case 151:
+        giaiBai151();
         break;
-      case 68:
-        giaiBai68();
+      case 153:
+        giaiBai153();
         break;
-      case 69:
-        print('PI: ${Constants.Pi}, ${Constants.secondsPerHours}');
+      case 281:
+        giaiBai281();
         break;
     }
   }
 }
 
 void main() {
-  print('Nhap n:');
-  int? n = int.parse(stdin.readLineSync()!);
+  UserInput inputOpt = UserInput();
+  int n = inputOpt.enterInput('Nhap so bai:');
+  DeBai deBai = DeBai();
+  deBai.inDeBai(soBai: n);
   GiaiBaiTap resolver = GiaiBaiTap();
   resolver.giaiBaiX(n);
 }

@@ -1,4 +1,4 @@
-import 'dart:io';
+import 'user_input.dart';
 
 class Bai117 {
   int tinhTong(int n, int x) {
@@ -13,11 +13,9 @@ class Bai117 {
 
   void resolve() {
     // Bài 117: Viết chương trình nhập n và tính tổng S(n) = x + x^2 + x^3 + … + x^n
-    print('Nhap n:');
-    int? n = int.parse(stdin.readLineSync()!);
-
-    print('Nhap x:');
-    int? x = int.parse(stdin.readLineSync()!);
+    UserInput inputOpt = UserInput();
+    int n = inputOpt.enterInput('Nhap n:');
+    int x = inputOpt.enterInput('Nhap x:');
 
     print(tinhTong(n, x));
   }

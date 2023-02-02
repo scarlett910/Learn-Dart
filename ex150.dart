@@ -1,5 +1,4 @@
-import 'dart:io';
-import 'dart:math';
+import 'user_input.dart';
 
 class Bai150 {
   int findNeg(List index, int n) {
@@ -26,17 +25,11 @@ class Bai150 {
 
   void resolve() {
     //Bài 150: Hãy tìm giá trị âm lớn nhất trong mảng 1 chiều các số thực. Nếu mảng không có giá trị âm thì trả về -1
-    print('Nhap n:');
-    int? n = int.parse(stdin.readLineSync()!);
-    List<int> index = [];
-    var randomNumber = Random();
+    UserInput inputOpt = UserInput();
+    int n = inputOpt.enterInput('Nhap so phan tu:');
+    List<int> list = inputOpt.createIntList(soPhanTu: n);
+    print(list);
 
-    while (index.length < n) {
-      int i = randomNumber.nextInt(200) - 100;
-      index.add(i);
-    }
-    print(index);
-
-    print(findLargestNeg(index, n));
+    print(findLargestNeg(list, n));
   }
 }

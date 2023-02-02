@@ -1,5 +1,4 @@
-import 'dart:io';
-import 'dart:math';
+import 'user_input.dart';
 
 class Bai124 {
   bool checkSmaller2004(List index, int n) {
@@ -14,18 +13,12 @@ class Bai124 {
 
   void resolve() {
     // Bài 124: Viết hàm kiểm tra trong mảng các số nguyên có tồn tại giá trị chẵn nhỏ hơn 2004 hay không
-    print('Nhap n:');
-    int? n = int.parse(stdin.readLineSync()!);
-    List<int> index = [];
-    var randomNumber = Random();
+    UserInput inputOpt = UserInput();
+    int n = inputOpt.enterInput('Nhap so phan tu:');
+    List<int> list = inputOpt.createIntList(soPhanTu: n);
+    print(list);
 
-    while (index.length < n) {
-      int i = randomNumber.nextInt(10000);
-      index.add(i);
-    }
-    print(index);
-
-    bool check = checkSmaller2004(index, n);
+    bool check = checkSmaller2004(list, n);
     if (check == true) {
       print('Co so chan nho hon 2004');
     } else {

@@ -1,45 +1,11 @@
-import 'dart:io';
+import 'user_input.dart';
+import 'day_in_month.dart';
 
+// Bài 102: Viết chương trình nhập vào 1 ngày ( ngày, tháng, năm). Tìm ngày kế ngày vừa nhập (ngày, tháng, năm)
 class Bai102 {
-  bool isLeapYear(int nam) {
-    if (nam % 400 == 0 || (nam % 4 == 0 && nam % 100 != 0)) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-
-  int totalDayInMonth(int thang, int nam) {
-    int dayInMonth = 0;
-    switch (thang) {
-      case 1:
-      case 3:
-      case 5:
-      case 7:
-      case 8:
-      case 10:
-      case 12:
-        dayInMonth = 31;
-        break;
-      case 4:
-      case 6:
-      case 9:
-      case 11:
-        dayInMonth = 30;
-        break;
-      default:
-        if (isLeapYear(nam) == true) {
-          dayInMonth = 29;
-        } else {
-          dayInMonth = 28;
-        }
-    }
-    return dayInMonth;
-  }
-
+  CheckDayInMonth checkDay = CheckDayInMonth();
   void nextDay(int ngay, int thang, int nam) {
-    int dayInMonth = totalDayInMonth(thang, nam);
-    if (ngay < dayInMonth) {
+    if (ngay < checkDay.totalDayInMonth(thang, nam)) {
       ngay++;
     } else if (thang < 12) {
       ngay = 1;
@@ -48,21 +14,16 @@ class Bai102 {
       ngay = thang = 1;
       nam++;
     }
-    print(ngay);
-    print(thang);
-    print(nam);
+    print('Ngay tiep theo la: $ngay/$thang/$nam.');
   }
 
   void resolve() {
-    print('Nhap nam:');
-    int nam = int.parse(stdin.readLineSync()!);
+    UserInput inputOpt = UserInput();
+    int nam = inputOpt.enterInput('Nhap nam:');
+    int thang = inputOpt.enterInput('Nhap thang:');
+    int ngay = inputOpt.enterInput('Nhap ngay:');
 
-    print('Nhap thang:');
-    int thang = int.parse(stdin.readLineSync()!);
-
-    print('Nhap ngay:');
-    int ngay = int.parse(stdin.readLineSync()!);
-    if (isLeapYear(nam) == false && ngay == 29) {
+    if (checkDay.isLeapYear(nam) == false && ngay == 29) {
       print('ngay khong ton tai');
     } else {
       nextDay(ngay, thang, nam);

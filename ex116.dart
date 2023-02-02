@@ -1,4 +1,4 @@
-import 'dart:io';
+import 'user_input.dart';
 
 class Bai116 {
   int tinhTong(int n) {
@@ -13,8 +13,8 @@ class Bai116 {
 
   void resolve() {
     // Bài 116: Viết chương trình nhập n và tính tổng S = 1 + 2 + 3 + … + n
-    print('Nhap n:');
-    int? n = int.parse(stdin.readLineSync()!);
+    UserInput inputOpt = UserInput();
+    int n = inputOpt.enterInput('Nhap n:');
     print(tinhTong(n));
   }
 }

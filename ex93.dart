@@ -1,17 +1,16 @@
-import 'dart:io';
-
-import 'so_nguyen_to.dart';
 import 'user_input.dart';
+import 'prime_number.dart';
 
 class Bai93 {
   void resolve() {
     // Bài 93: Viết chương trình kiểm tra 1 số có phải là số nguyên tố hay không
-    int n = UserInput.nhapSoV2('Mời bạn nhập 1 số nguyên:');
+    UserInput inputOpt = UserInput();
+    int n = inputOpt.enterInput('Nhap n:');
 
-    if (SoNguyenTo.isSoNguyenToV2(number: n)) {
+    if (PrimeNumber.checkPrime(number: n) == true) {
       print('La so nguyen to');
     } else {
-      print('Khong la so nguyen to');
+      print('Khong phai la so nguyen to');
     }
   }
 }

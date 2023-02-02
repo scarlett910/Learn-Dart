@@ -1,22 +1,15 @@
-import 'dart:io';
-import 'dart:math';
+import 'user_input.dart';
 
 class Bai200 {
   void resolve() {
     // Bài 200: Tính tổng các phần tử trong mảng
-    List<int> index = [];
-    print('Nhập số phần tử:');
-    int? n = int.parse(stdin.readLineSync()!);
-    var randomNumber = Random();
-
-    while (index.length < n) {
-      int i = randomNumber.nextInt(100);
-      index.add(i);
-    }
-    print(index);
+    UserInput inputOpt = UserInput();
+    int n = inputOpt.enterInput('Nhap so phan tu:');
+    List<int> list = inputOpt.createIntList(soPhanTu: n);
+    print(list);
     int total = 0;
     for (int j = 0; j < n; j++) {
-      total += index[j];
+      total += list[j];
     }
     print(total);
   }
