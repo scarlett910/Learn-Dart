@@ -8,8 +8,17 @@ class Bai191 {
     List<int> list = inputOpt.createIntList(soPhanTu: n);
     print(list);
     int count = 0;
-    for (int i = 1; i < n - 1; i++) {
-      if (list[i] > list[i - 1] && list[i] > list[i + 1]) {
+    for (int i = 0; i < n; i++) {
+      if (i == 0 && list[i] > list[i + 1]) {
+        count = 1;
+        print(list[i]);
+      } else if (i != 0 &&
+          i < n - 1 &&
+          list[i] > list[i - 1] &&
+          list[i] > list[i + 1]) {
+        count = 1;
+        print(list[i]);
+      } else if (i == n - 1 && list[i] > list[i - 1]) {
         count = 1;
         print(list[i]);
       }

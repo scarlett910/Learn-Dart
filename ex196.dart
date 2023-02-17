@@ -7,7 +7,7 @@ class Bai196 {
     int n = inputOpt.enterInput('Nhap so phan tu:');
     List<int> list = inputOpt.createIntList(soPhanTu: n);
     print(list);
-    for (int i = 1; i < n - 1; i++) {
+    for (int i = 0; i < n; i++) {
       if (list[i] < 0) {
         print(list[i]);
       }
