@@ -278,6 +278,165 @@ class GiaiBaiTap {
     Bai153().resolve();
   }
 
+  void giaiBai154() {
+    Bai154().resolve();
+  }
+
+  void giaiBai155() {
+    Bai155().resolve();
+  }
+
+  void giaiBai156() {
+    Bai156().resolve();
+  }
+
+  void giaiBai157() {
+    Bai157().resolve();
+  }
+
+  void giaiBai158() {
+    Bai158().resolve();
+  }
+
+  void giaiBai159() {
+    Bai159().resolve();
+  }
+
+  void giaiBai160() {
+    Bai160().resolve();
+  }
+
+  void giaiBai161() {
+    Bai161().resolve();
+  }
+
+  void giaiBai162() {
+    Bai162().resolve();
+  }
+
+  void giaiBai165() {
+    Bai165().resolve();
+  }
+
+  void giaiBai166() {
+    Bai166().resolve();
+  }
+
+  void giaiBai167() {
+    Bai167().resolve();
+  }
+
+  void giaiBai168() {
+    Bai168().resolve();
+  }
+
+  void giaiBai169() {
+    Bai169().resolve();
+  }
+
+  void giaiBai170() {
+    Bai170().resolve();
+  }
+
+  // void giaiBai173() {
+  //   Bai173().resolve();
+  // }
+  void giaiBai179() {
+    Bai179().resolve();
+  }
+
+  void giaiBai180() {
+    Bai180().resolve();
+  }
+
+  void giaiBai181() {
+    Bai181().resolve();
+  }
+
+  void giaiBai182() {
+    Bai182().resolve();
+  }
+
+  void giaiBai183() {
+    Bai183().resolve();
+  }
+
+  void giaiBai184() {
+    Bai184().resolve();
+  }
+
+  void giaiBai186() {
+    Bai186().resolve();
+  }
+
+  void giaiBai187() {
+    Bai187().resolve();
+  }
+
+  void giaiBai188() {
+    Bai188().resolve();
+  }
+
+  void giaiBai189() {
+    Bai189().resolve();
+  }
+
+  void giaiBai190() {
+    Bai190().resolve();
+  }
+
+  void giaiBai191() {
+    Bai191().resolve();
+  }
+
+  void giaiBai192() {
+    Bai192().resolve();
+  }
+
+  void giaiBai193() {
+    Bai193().resolve();
+  }
+
+  void giaiBai194() {
+    Bai194().resolve();
+  }
+
+  void giaiBai196() {
+    Bai196().resolve();
+  }
+
+  void giaiBai197() {
+    Bai197().resolve();
+  }
+
+  void giaiBai198() {
+    Bai198().resolve();
+  }
+
+  void giaiBai199() {
+    Bai199().resolve();
+  }
+
+  void giaiBai204() {
+    Bai204().resolve();
+  }
+
+  void giaiBai205() {
+    Bai205().resolve();
+  }
+
+  void giaiBai206() {
+    Bai206().resolve();
+  }
+
+  void giaiBai207() {
+    Bai207().resolve();
+  }
+
+  void giaiBai211() {
+    Bai211().resolve();
+  }
+
   void giaiBaiX(int soBai) {
     switch (soBai) {
       case 77:
@@ -487,13 +646,133 @@ class GiaiBaiTap {
       case 281:
         giaiBai281();
         break;
+      case 154:
+        giaiBai154();
+        break;
+      case 155:
+        giaiBai155();
+        break;
+      case 156:
+        giaiBai156();
+        break;
+      case 157:
+        giaiBai157();
+        break;
+      case 158:
+        giaiBai158();
+        break;
+      case 159:
+        giaiBai159();
+        break;
+      case 160:
+        giaiBai160();
+        break;
+      case 161:
+        giaiBai161();
+        break;
+      case 162:
+        giaiBai162();
+        break;
+      case 165:
+        giaiBai165();
+        break;
+      case 166:
+        giaiBai166();
+        break;
+      case 167:
+        giaiBai167();
+        break;
+      case 168:
+        giaiBai168();
+        break;
+      case 169:
+        giaiBai169();
+        break;
+      case 170:
+        giaiBai170();
+        break;
+      // case 173:
+      //   giaiBai173();
+      //   break;
+      case 179:
+        giaiBai179();
+        break;
+      case 180:
+        giaiBai180();
+        break;
+      case 181:
+        giaiBai181();
+        break;
+      case 182:
+        giaiBai182();
+        break;
+      case 183:
+        giaiBai183();
+        break;
+      case 184:
+        giaiBai184();
+        break;
+      case 186:
+        giaiBai186();
+        break;
+      case 187:
+        giaiBai187();
+        break;
+      case 188:
+        giaiBai188();
+        break;
+      case 189:
+        giaiBai189();
+        break;
+      case 190:
+        giaiBai190();
+        break;
+      case 191:
+        giaiBai191();
+        break;
+      case 192:
+        giaiBai192();
+        break;
+      case 193:
+        giaiBai193();
+        break;
+      case 194:
+        giaiBai194();
+        break;
+      case 196:
+        giaiBai196();
+        break;
+      case 197:
+        giaiBai197();
+        break;
+      case 198:
+        giaiBai198();
+        break;
+      case 199:
+        giaiBai199();
+        break;
+      case 204:
+        giaiBai204();
+        break;
+      case 205:
+        giaiBai205();
+        break;
+      case 206:
+        giaiBai206();
+        break;
+      case 207:
+        giaiBai207();
+        break;
+      case 211:
+        giaiBai211();
+        break;
     }
   }
 }
 
 void main() {
-  UserInput inputOpt = UserInput();
-  int n = inputOpt.enterInput('Nhap so bai:');
+  UserInput inputOperator = UserInput();
+  int n = inputOperator.enterInput('Nhap so bai:');
   DeBai deBai = DeBai();
   deBai.inDeBai(soBai: n);
   GiaiBaiTap resolver = GiaiBaiTap();

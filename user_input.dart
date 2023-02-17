@@ -17,4 +17,15 @@ class UserInput {
     }
     return list;
   }
+
+  List<int> createOnlyPosIntList({required int soPhanTu}) {
+    List<int> list = [];
+    var randomNumber = Random();
+
+    while (list.length < soPhanTu) {
+      int i = randomNumber.nextInt(1000);
+      list.add(i);
+    }
+    return list;
+  }
 }

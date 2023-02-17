@@ -69,6 +69,46 @@ export 'ex148.dart';
 export 'ex150.dart';
 export 'ex151.dart';
 export 'ex153.dart';
+export 'ex154.dart';
+export 'ex155.dart';
+export 'ex156.dart';
+export 'ex157.dart';
+export 'ex158.dart';
+export 'ex159.dart';
+export 'ex160.dart';
+export 'ex161.dart';
+export 'ex162.dart';
+export 'ex165.dart';
+export 'ex166.dart';
+export 'ex167.dart';
+export 'ex168.dart';
+export 'ex169.dart';
+export 'ex170.dart';
+export 'ex173.dart';
+export 'ex179.dart';
+export 'ex180.dart';
+export 'ex181.dart';
+export 'ex182.dart';
+export 'ex183.dart';
+export 'ex184.dart';
+export 'ex186.dart';
+export 'ex187.dart';
+export 'ex188.dart';
+export 'ex189.dart';
+export 'ex190.dart';
+export 'ex191.dart';
+export 'ex192.dart';
+export 'ex193.dart';
+export 'ex194.dart';
+export 'ex196.dart';
+export 'ex197.dart';
+export 'ex198.dart';
+export 'ex199.dart';
+export 'ex204.dart';
+export 'ex205.dart';
+export 'ex206.dart';
+export 'ex207.dart';
+export 'ex211.dart';
 
 final deBai = {
   77: 'Viết chương trình tính tổng của dãy số sau: S(n) = 1 + 2 + 3 + … + n',
@@ -168,17 +208,89 @@ final deBai = {
   151:
       'Hãy tìm số nguyên tố lớn nhất trong mảng 1 chiều các số nguyên. Nếu mảng không có số nguyên tố thì trả về -1',
   153:
-      'Hãy tìm giá trị chẵn nhỏ nhất trong mảng 1 chiều các số nguyên. Nếu mảng không có số chẵn thì trả về -1'
+      'Hãy tìm giá trị chẵn nhỏ nhất trong mảng 1 chiều các số nguyên. Nếu mảng không có số chẵn thì trả về -1',
+  154:
+      'Hãy tìm vị trí giá trị âm nhỏ nhất trong mảng các số thực. Nếu mảng không có số âm thì trả về -1',
+  155: 'Hãy tìm giá trị trong mảng các số thực xa giá trị x nhất',
+  156: 'Hãy tìm giá trị trong mảng các số thực gần giá trị x nhất',
+  157:
+      'Cho mảng 1 chiều các số thực, hãy tìm đoạn [a, b] sao cho đoạn này chứa tất cả các giá trị trong mảng',
+  158:
+      'Cho mảng 1 chiều các số thực, hãy tìm giá trị x sao cho đoạn [-x, x] chứa tất cả các giá trị trong mảng',
+  159:
+      'Cho mảng 1 chiều các số thực, hãy tìm giá trị đầu tiên lớn hơn giá trị 133. Nếu mảng không có giá trị thỏa điều kiện trên thì trả về -1',
+  160:
+      'Cho mảng 1 chiều các số thực, hãy tìm giá trị âm cuối cùng lớn hơn giá trị -1. Nếu mảng không có giá trị thỏa điều kiện trên thì trả về -1',
+  161:
+      'Cho mảng 1 chiều các số nguyên, hãy tìm giá trị đầu tiên nằm trong khoảng [x, y] cho trước. Nếu mảng không có giá trị thỏa điều kiện trên thì trả về -1',
+  162:
+      'Cho mảng 1 chiều các số thực. Hãy viết hàm tìm một vị trí trong mảng thỏa 2 điều kiện: có 2 giá trị lân cận và giá trị tại đó bằng tích 2 giá trị lân cận. Nếu mảng không tồn tại giá trị như vậy thì trả về giá trị -1',
+  165:
+      'Cho mảng 1 chiều các số nguyên. Hãy tìm giá trị đầu tiên có chữ số đầu tiên là chữ số lẻ',
+  166:
+      'Cho mảng 1 chiều các số nguyên. Hãy viết hàm tìm giá trị đầu tiên trong mảng có dạng 2^k. Nếu mảng không có giá trị dạng 2k thì hàm sẽ trả về 0',
+  167:
+      'Hãy tìm giá trị thỏa điều kiện toàn chữ số lẻ và là giá trị lớn nhất thỏa điều kiện ấy trong mảng 1 chiều các số nguyên.Nếu mảng không có giá trị thỏa điều kiện trên thì trả về 0',
+  168:
+      'Cho mảng 1 chiều các số nguyên. Hãy viết hàm tìm giá trị lớn nhất trong mảng có dạng 5^k. Nếu mảng khong tồn tại giá trị 5^k thì hàm sẽ trả về 0',
+  169:
+      'Cho mảng 1 chiều các số nguyên. Hãy viết hàm tìm số chẵn nhỏ nhất lớn hơn mọi giá trị lẻ có trong mảng',
+  170:
+      'Cho mảng 1 chiều các số nguyên. Hãy viết hàm tìm số nguyên tố nhỏ nhất lớn hơn mọi giá trị có trong mảng',
+  173:
+      'Cho mảng 1 chiều các số nguyên. Hãy  viết hàm tìm chữ số xuất hiện ít nhất trong mảng',
+  179:
+      'Hãy liệt kê các giá trị trong mảng mà thỏa điều kiện lớn hơn giá trị tuyệt đối của giá trị đứng liền sau nó',
+  180:
+      'Hãy liệt kê các giá trị trong mảng mà thỏa điều kiện nhỏ hơn trị tuyệt đối của giá trị đứng liền sau nó và lớn hơn trị tuyệt đối của giá trị đứng liền trước nó',
+  181:
+      'Cho mảng 1 chiều các số nguyên. Hãy viết hàm liệt kê các giá trị chẵn có ít nhất 1 lân cận cũng là giá trị chẵn',
+  182:
+      'Cho mảng 1 chiều các số thực. Hãy viết hàm liệt kê tất cả các giá trị trong mảng có ít nhất 1 lận cận trái dấu với nó',
+  183:
+      'Hãy liệt kê các vị trí mà giá trị tại đó là giá trị lớn nhất trong mảng 1 chiều các số thực',
+  184:
+      'Hãy liệt kê các vị trí mà giá trị tại đó là số nguyên tố trong mảng 1 chiều các số nguyên',
+  186:
+      'Hãy liệt kê các vị trí trong mảng 1 chiều các số thực mà giá trị tại đó bằng giá trị âm trong mảng',
+  187:
+      'Hãy liệt kê các vị trí mà giá trị tại các vị trí đó bằng giá trị dương nhỏ nhất trong mảng 1 chiều các số thực',
+  188: 'Hãy liệt kê các vị trí chẵn lớn nhất trong mảng 1 chiều các số nguyên',
+  189:
+      'Hãy liệt kê các giá trị trong mảng 1 chiều các số nguyên có chữ số đầu tiên là chữ số lẻ',
+  190:
+      'Hãy liệt kê các giá trị có toàn chữ số lẻ trong mảng 1 chiều các số nguyên',
+  191:
+      'Hãy liệt kê các giá trị cực đại trong mảng 1 chiều các số thực. Một phần tử được gọi là cực đại khi lớn hơn các phần tử lân cận',
+  192:
+      'Hãy liệt kê các  giá trị trong mảng 1 chiều các số nguyên có chữ số đầu tiên là số chẵn',
+  193:
+      'Cho mảng 1 chiều các số nguyên. Hãy viết hàm liệt kê các giá trị trong mảng có dạng 3^k. Nếu mảng không có giá trị đó thì trả về 0',
+  194:
+      'Cho mảng 1 chiều các số nguyên có nhiều hơn 2 giá trị. Hãy viết hàm liệt kê các cặp giá trị gần nhau nhất',
+  196: 'Liệt kê các số âm trong mảng 1 chiều các số nguyên',
+  197:
+      'Hãy liệt kê các giá trị trong mảng các số nguyên có chữ số đầu tiên là chữ số lẻ',
+  198:
+      'Hãy liệt kê các vị trí mà giá trị tại đó là giá trị lớn nhất trong mảng 1 chiều các số thực',
+  199:
+      'Hãy liệt kê các vị trí mà giá trị tại đó là số nguyên tố trong mảng 1 chiều các số nguyên',
+  204:
+      'Tính tổng các giá trị lớn hơn giá trị đứng liền trước nó trong mảng 1 chiều các số thực',
+  205:
+      'Tính tổng các giá trị lớn hơn trị tuyệt đối của giá trị đứng liền sau nó trong mảng 1 chiều các số thực',
+  206:
+      'Tính tổng các giá trị lớn hơn các giá trị xung quanh trong mảng 1 chiều các số thực',
+  207:
+      'Tính tổng các phần tử “cực trị” trong mảng. Một phần tử được gọi là cực trị khi nó lớn hơn hoặc nhỏ hơn các phần tử xung quanh nó',
+  211: 'Tính trung bình cộng các số nguyên tố trong mảng 1 chiều các số nguyên',
+  212: 'Tính trung bình cộng các số dương trong mảng 1 chiều các số thực',
+  213:
+      'Tính trung bình cộng các giá trị lớn hơn giá trị x trong mảng 1 chiều các số thực'
 };
 
 class DeBai {
   void inDeBai({required int soBai}) {
     print(deBai[soBai]);
   }
-}
-
-void main() {
-  int i = 29;
-  int a = i ~/ 10;
-  print(a);
 }
